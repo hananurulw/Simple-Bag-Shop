@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <link href="kategori.css" rel="stylesheet">
+    <header id="header">
+      <a href="#" class="logo"> </a>
+      <div class="back-button" onclick="history.back()">
+        <div class="arrow-wrap">
+            <span class="arrow-part-1"></span>
+            <span class="arrow-part-2"></span>
+            <span class="arrow-part-3"></span>
+        </div>
+    </div>
+      <ul>
+        <li><a href="home.html" >Home</a></li>
+        <li><a href="katalog.html" class="active">Products</a></li>
+        <li><a href="Pemesanan.php">Order</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+      <script>
+          // Ambil semua link di navbar
+          const menuLinks = document.querySelectorAll('#header ul li a');
+          
+          // Tambahkan event listener untuk setiap link
+          menuLinks.forEach(link => {
+              link.addEventListener('click', function(e) {
+                  // Hapus kelas active dari semua link
+                  menuLinks.forEach(link => link.classList.remove('active'));
+                  
+                  // Tambahkan kelas active pada link yang diklik
+                  e.target.classList.add('active');
+              });
+          });
+      </script>
+      
+  </header>
+    <div class="container">
+        <main class="grid">
+          <article>
+            <img src="assets/JSlingB/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Jumper Sling Bag</h3>
+              <h7>Rp 269.100</h7>
+              <p>Material: nylon<br>
+                Spesial Features: 1.	Kompartemen utama (dengan resleting), 
+                kompartemen depan untuk easy access,
+                dan dapat dijinjing atau diselempang 
+                
+              </p>
+              <a href="JSlingB.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/CEGSlingB/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Concert Easy Going Sling Bag</h3>
+              <h7>Rp 270.000</h7>
+              <p>Material: nylon<br>
+                Spesial Features: Satu kompartemen utama (dengan zip), 
+                saku beritsleting depan dengan detailcord puller, 
+                tali yang dapat diatur panjang pendeknya, dan
+                dua kantong slot kartu
+                
+              </p>
+              <a href="CEGSlingB.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/CRSlingB/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Concert Reround Sling Bag</h3>
+              <h7>Rp 249.000</h7>
+              <p>Material: nylon<br>
+                
+                Spesial Features: Kompartemen utama dengan penutup serut, 
+                pegangan yang dapat dilepas pasang, 
+                dapat digunakan dengan cara dijinjing dan diselempang, 
+                dan saku depan (dengan resleting)
+                
+              </p>
+              <a href="CRSlingB.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/KMSlingB/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Kumara Mini Sling Bag </h3>
+              <h7>Rp 229.000</h7>
+              <p>Material: nylon<br>
+                Dimension: 26 x 18 x 5 cm <br>
+                Spesial Features: Kompartemen utama (dengan resleting), 
+                dua saku di bagian dalam tas, 
+                dan tali yang dapat disesuaikan panjang dan pendeknya
+                
+              </p>
+              <a href="KMSlingB.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/CSSlingBC/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>City Strolling Sling Bag</h3>
+              <h7>Rp 289.000</h7>
+              <p>Material: nylon<br>
+                Dimension: 22 cm x 16 cm<br>
+                Spesial Features: Kompartemen utama (dengan snap button) dan dapat dijinjing atau diselempang. 
+                
+              </p>
+              <a href="CSSlingBC.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/GASlingB/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Go Active Sling Bag</h3>
+              <h7>Rp 254.150</h7>
+              <p>Material: nylon<br>
+                Dimension: 30cm x 30cm x 8cm <br>
+                Spesial Features: Main compartment with drawstring closure and 
+                made of high quality Nylon
+                
+              </p>
+              <a href="GASlingB.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+        </main>
+      </div>
+      <div class="footer">
+      <footer id="footer">
+        <p>&copy; 2024 Exsport. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://twitter.com/yourbrand" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/yourbrand" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/yourbrand" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="mailto:yourbrand@example.com">Contact Us</a>
+    </footer>
+  </div>
+</body>
+</html>

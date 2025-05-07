@@ -1,0 +1,178 @@
+/* General Body Styles */
+
+
+body {
+  background: linear-gradient(to bottom, #C0C7FB, #FEB7C9, #8FDBDB);
+}
+
+#header {
+  position: fixed;
+  /* To Overlap with background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5em 5em;
+  display: flex;
+  /* To get elements in row */
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99999;
+  /* Header shld be above everything */
+  backdrop-filter: blur(5px);
+}
+
+#header .logo {
+  color: #002431;
+  font-weight: 800;
+  font-size: 2.5em;
+  text-decoration: none;
+  
+  /* To prevent Underline */
+}
+
+#header ul {
+  display: flex;
+  /* To get elements in row */
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+#header ul li {
+  list-style: none;
+  /* To Remove dot */
+  margin: 0px 10px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  /* To prevent Underline */
+  padding: 6px 15px;
+  color: #003549;
+  border-radius: 20px;
+  
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+  background: #F775A9;
+  color: #C0C7FB;
+}
+/* Checkout Section Styles */
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Header Styles */
+h2 {
+  font-family: 'Poppins', sans-serif; /* Mengganti font */
+  font-size: 4rem;
+  font-weight: 600;
+  color: #4670ca;
+  text-shadow: 
+    0 0 8px #F775A9,    /* Neon Glow */
+    0 0 16px #F775A9, 
+    0 0 24px #F775A9, 
+    0 0 32px #F775A9, 
+    0 0 40px #F775A9, 
+    0 0 48px #F775A9, 
+    0 0 64px #fcfdff,
+    0 0 80px #fcfdff;  /* Tambahan layer untuk lebih menyala */
+}
+
+
+
+h4 {
+  font-size: 1.25rem;
+  color: #000000;
+}
+
+.list-group-item {
+  background-image: linear-gradient(135deg, #C0C7FB, #F775A9); /* Warna gradasi */
+  border: 1px solid #F775A9; /* Border tetap */
+  margin-bottom: 10px;
+  border-radius: 0.375rem;
+  color: #0a0a0a; /* Sesuaikan warna teks agar kontras dengan gradasi */
+}
+
+
+
+.btn-primary {
+  background-image: linear-gradient(135deg, #C0C7FB, #F775A9);
+  border:1px solid #F775A9 ; /* Hilangkan border jika ingin gradasi lebih seamless */
+  color: white; /* Sesuaikan warna teks agar kontras */
+  transition: background 0.2s ease-in-out;
+}
+
+
+
+/* Cart Section Styles */
+.list-group-item {
+  background-color: #000000;
+  border: 1px solid #F775A9;
+  margin-bottom: 10px;
+  border-radius: 0.375rem;
+}
+
+/* Footer Styles for Theme Toggle */
+.bd-mode-toggle .dropdown-menu {
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px rgba(191, 42, 42, 0.1);
+}
+
+.bd-mode-toggle .dropdown-item {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.bd-mode-toggle .dropdown-item:hover {
+  background-color: #000000;
+}
+
+.dropdown-item.active {
+  background-color: #e89fd4;
+  color: #F775A9;
+}
+footer {
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #3365d3;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #3365d3;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #3365d3;
+}   
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #3365d3;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #c0c7fb;
+}

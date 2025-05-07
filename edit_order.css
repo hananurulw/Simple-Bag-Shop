@@ -1,0 +1,262 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #f6c0d8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+#header {
+    position: fixed;
+    top: 10px;
+    min-height: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+}
+
+#header .logo {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #333;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #f34c9d;
+    color: white;
+}
+
+
+.back-button{
+  width:50px;
+  height:50px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  border-radius:50%;
+  border:#000 1px solid;
+  overflow:hidden;
+  transition:background 0.3s ease;
+  &.back{
+    .arrow-wrap{
+      left:-50%;
+    }
+  }
+  &:hover{
+    background:#000;
+    .arrow-wrap{
+      span{
+        background:#f34c9d;
+      }
+    }
+  }
+  .arrow-wrap{
+    display:block;
+    position:absolute;
+    height:70%;
+    width:70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition:left 0.3s ease;
+    span{
+      height:1px;
+      left:0;
+      top:50%;
+      background:#000;
+      position:absolute;
+      display:block;
+      transition:background 0.3s ease;
+    }
+    .arrow-part-1{
+      width:100%;
+      transform: translate(0, -50%);
+    }
+    .arrow-part-2{
+      width:60%;
+      transform: rotate(-45deg);
+      transform-origin: 0 0;
+    }
+    .arrow-part-3{
+      width:60%;
+      transform: rotate(45deg);
+      transform-origin: 0 0;
+    }
+  }
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+    background: #c0c7fb;
+    box-shadow: 5px 10px 10px rgba(80, 74, 74, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 3px solid #0074D9; /* Tebal border */
+  border-radius: 5px; /* Sudut melengkung */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  appearance: none; /* Untuk menyembunyikan panah default browser */
+  cursor: pointer;
+  transition: border-color 0.3s ease; /* Animasi transisi saat focus */
+}
+
+select:focus {
+  outline: none;
+  border-color: #f34c9d; /* Warna border saat fokus */
+  box-shadow: 0 0 5px rgba(255, 69, 0, 0.5); /* Efek shadow saat fokus */
+}
+
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Styles */
+.form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Form Actions */
+.form-actions {
+    text-align: center;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    background-color: #f34c9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    background-color: #e12c87;
+    outline: none;
+}
+
+/* Error Message */
+.error-message {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f34c9d;
+  color: #3365d3;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #fff;
+}   
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}

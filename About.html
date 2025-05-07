@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo"> </a>
+        <ul>
+            <li><a href="home.html" >Home</a></li>
+            <li><a href="katalog.html" >Products</a></li>
+            <li><a href="Pemesanan.php">Order</a></li>
+            <li><a href="About.html" class="active">About</a></li>
+        </ul>
+        <script>
+            // Ambil semua link di navbar
+            const menuLinks = document.querySelectorAll('#header ul li a');
+            
+            // Tambahkan event listener untuk setiap link
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Hapus kelas active dari semua link
+                    menuLinks.forEach(link => link.classList.remove('active'));
+                    
+                    // Tambahkan kelas active pada link yang diklik
+                    e.target.classList.add('active');
+                });
+            });
+        </script>
+        
+    </header>
+    <link href="about.css" rel="stylesheet" />
+<div class="container">
+  <div class="contentLeft">
+    <div class="row">
+        <div class="imgWrapper">
+            <img src="assets/p1.jpeg" alt="">
+        </div>
+        <div class="imgWrapper">
+            <img src="assets/p2.jpeg" alt="">
+        </div>
+        <div class="imgWrapper">
+            <img src="assets/p3.jpeg" alt="">
+        </div>
+        <div class="imgWrapper">
+            <img src="assets/p4.jpeg">
+        </div>
+    </div>
+  </div>
+  <div class="contentRight">
+    <div class="content">
+      <h4></h4>
+      <h2>Profil Kami...</h2>
+      <p>Di <b>Exsport bags</b>, kami menghadirkan tas berkualitas dengan desain yang elegan dan fungsional, dibuat untuk memenuhi kebutuhan gaya hidup yang dinamis. Setiap produk kami dipilih dengan cermat, menggunakan bahan terbaik dan diproduksi dengan perhatian penuh terhadap detail, untuk memberikan pengalaman terbaik bagi pelanggan kami di seluruh dunia.
+
+        Kami berkomitmen untuk menciptakan produk yang tidak hanya memenuhi standar internasional, tetapi juga menambahkan nilai lebih dalam setiap langkah perjalanan Anda.
+        
+        Lokasi kami di <b>Jalan Bahureksa no.24, Bandung 40115</b> . Anda dapat menemukan kami di Google Maps melalui tautan berikut:</p>
+      <a href="https://maps.app.goo.gl/71enTTWzWrU7ptwB7">Read More...</a>
+    </div>
+  </div>
+</div>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<!--==================== ABOUT ====================-->
+<section class="about section" id="about">
+  <div class="about__container container grid">
+    <h2 class="section__title-1">
+      <span>About Me (One)</span>
+    </h2>
+
+    <div class="about__perfil">
+      <div class="about__image">
+        <img src="assets/one.jpeg" alt="image" class="about__img">
+
+        <div class="about__shadow"></div>
+
+        <div class="geometric-box"></div>
+
+        <div class="about__box"></div>
+      </div>
+    </div>
+
+    <div class="about__info">
+        <p class="about__description">
+            Halo semuanya!Aku <b>Hana Nurul Wahida</b>, mahasiswa S1 jurusan <b>Statistika</b> di Universitas Islam Bandung. Saat ini, aku dan teman sekeren aku lagi ngerjain proyek web untuk tugas mata kuliah <b>Pemrograman Web</b>. Kami berdua punya misi buat bikin website yang nggak cuma fungsional, tapi juga estetik dan user-friendly.
+            <br><br>
+            Kerja bareng ini bikin kami makin semangat buat eksplorasi desain, kode, dan ide-ide kreatif biar hasilnya benar-benar <i>super keren</i> dan memorable! 
+            <br><br>
+        </p>
+    </div>
+    
+
+      <ul class="about__list">
+        
+          <b></b> 
+        
+      </ul>
+
+      <div class="about__buttons">
+        <a href="#contact" class="button">
+          <i class="ri-send-plane-line"></i> Contact Me
+        </a>
+        <a href="https://www.linkedin.com/in/hana-nurul-wahidah-798394193?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="button__ghost">
+          <i class="ri-linkedin-box-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="about__container container grid">
+    <h2 class="section__title-1">
+      <span>About Me(Iyong)</span>
+    </h2>
+
+    <div class="about__perfil">
+      <div class="about__image">
+        <img src="assets/iyong.jpeg" alt="image" class="about__img">
+
+        <div class="about__shadow"></div>
+
+        <div class="geometric-box"></div>
+
+        <div class="about__box"></div>
+      </div>
+    </div>
+
+    <div class="about__info">
+        <p class="about__description">
+            Hai semuanya! Perkenalkan, aku <b>Siti Syarah Fatia Apriani</b>. Saat ini aku bersama teman terbaikku, lagi sibuk mengerjakan proyek web untuk mata kuliah <b>Pemrograman Web</b>. Aku mahasiswa yang juga punya ketertarikan besar dalam dunia coding dan desain, dan proyek ini jadi kesempatan seru buat kami menggabungkan ide dan kemampuan.
+            <br><br>
+            Bersama Hana, kami punya visi buat bikin website yang nggak cuma keren secara tampilan, tapi juga nyaman dipakai. Setiap kode yang kami tulis punya tujuan untuk memberikan pengalaman pengguna yang terbaik. 
+            <br><br>
+            Terima kasih sudah mampir di halaman kami! Kami harap website ini bisa jadi bukti kecil dari semangat kami belajar dan berkreasi. Sampai jumpa di proyek-proyek keren berikutnya! 
+        </p>
+    </div>
+    
+
+      <ul class="about__list">
+          <b></b> 
+      </ul>
+
+      <div class="about__buttons">
+        <a href="#contact" class="button">
+          <i class="ri-send-plane-line"></i> Contact Me
+        </a>
+
+        <a href="https://www.linkedin.com/in/siti-syarah-fatia-apriani-b5a0a5266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="button__ghost">
+          <i class="ri-linkedin-box-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <p>&copy; 2024 Exsport. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://twitter.com/yourbrand" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com/yourbrand" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/yourbrand" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <a href="mailto:yourbrand@example.com">Contact Us</a>
+</footer>
+</section>
+</body>
+</html>

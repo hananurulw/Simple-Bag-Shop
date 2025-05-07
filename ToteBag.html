@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <link href="kategori.css" rel="stylesheet">
+    <header id="header">
+      <a href="#" class="logo"> </a>
+      <div class="back-button" onclick="history.back()">
+        <div class="arrow-wrap">
+            <span class="arrow-part-1"></span>
+            <span class="arrow-part-2"></span>
+            <span class="arrow-part-3"></span>
+        </div>
+    </div>
+      <ul>
+          <li><a href="home.html" >Home</a></li>
+          <li><a href="katalog.html" class="active">Products</a></li>
+          <li><a href="Pemesanan.php">Order</a></li>
+          <li><a href="About.html">About</a></li>
+      </ul>
+      <script>
+          // Ambil semua link di navbar
+          const menuLinks = document.querySelectorAll('#header ul li a');
+          
+          // Tambahkan event listener untuk setiap link
+          menuLinks.forEach(link => {
+              link.addEventListener('click', function(e) {
+                  // Hapus kelas active dari semua link
+                  menuLinks.forEach(link => link.classList.remove('active'));
+                  
+                  // Tambahkan kelas active pada link yang diklik
+                  e.target.classList.add('active');
+              });
+          });
+      </script>
+      
+  </header>
+    <div class="container">
+        <main class="grid">
+          <article>
+            <img src="assets/BCPKey/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Bimble Coin Pouch</h3>
+              <h7>Rp 79.000</h7>
+              <p>Material: nylon<br>
+                Dimension: 8 x 9 cm <br>
+                Spesial Features: Main Compartment and carabiner for hanging
+              </p>
+              <a href="BCPkey.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/DJLToteB/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Daily Journey Laptop Tote Bag</h3>
+              <h7>Rp 349.000</h7>
+              <p>Material: nylon<br>
+                Dimension: 32 x 40 x 12cm <br>
+                Spesial Features: Dilengkapi laptop sleeve di bagian dalam yang muat sampai 15 inch
+              </p>
+              <a href="DJLToteB.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/DToteB/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Dog Tote Bag</h3>
+              <h7>Rp 713.900</h7>
+              <p>Material: nylon<br>
+                Dimension: Body long 35 cm Body height 25 cm <br>
+                Spesial Features: Dilengkapi dengan poo bag yang dapat digantung pada hanging strap
+              </p>
+              <a href="DToteB.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/MCRPKey/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Micro Classic RR01 Pouch</h3>
+              <h7>Rp 109.000</h7>
+              <p>Material: nylon<br>
+                Dimension: 8 x 9 cm <br>
+                Spesial Features: 3.	Dilengkapi tali pada bagian belakang untuk menggantungkan pouch pada ikat pinggang
+              </p>
+              <a href="MCRPKey.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/OToteB/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Outgoing Tote Bag</h3>
+              <h7>Rp 282.870</h7>
+              <p>Material: nylon<br>
+                Dimension: 48 x 31 x 15 cm <br>
+                Spesial Features: 6.	Pegangan dua arah (jinjing dan tali tangan)
+              </p>
+              <a href="OToteB.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/PCPKey/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Penny Coin Pouch</h3>
+              <h7>Rp 89.000</h7>
+              <p>
+                Material: nylon <br>
+                Spesial Features: Kompartemen utama (dengan resleting),
+                Carabiner untuk menggantung, dan Water-repellent material
+              </p>
+              <a href="PCPKey.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+        </main>
+      </div>
+      <div class="footer">
+      <footer id="footer">
+        <p>&copy; 2024 Exsport. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://twitter.com/yourbrand" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/yourbrand" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/yourbrand" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="mailto:yourbrand@example.com">Contact Us</a>
+    </footer>
+  </div>
+</body>
+</html>

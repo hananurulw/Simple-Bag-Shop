@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the interactive Halloween Party project, showcasing responsive design, animations, and web development techniques. Immerse yourself in the spooky ambiance of Halloween.">
+        
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+        
+    
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <!-- Page Title -->
+    <title>Parallax Scrolling Website</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="home.css">
+    
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+    <!-- This is the header/ Nav Bar -->
+    <header id="header">
+        <a href="#" class="logo"> </a>
+        <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="katalog.html" >Products</a></li>
+            <li><a href="Pemesanan.php">Order</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+        <script>
+            // Ambil semua link di navbar
+            const menuLinks = document.querySelectorAll('#header ul li a');
+            
+            // Tambahkan event listener untuk setiap link
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Hapus kelas active dari semua link
+                    menuLinks.forEach(link => link.classList.remove('active'));
+                    
+                    // Tambahkan kelas active pada link yang diklik
+                    e.target.classList.add('active');
+                });
+            });
+        </script>
+        
+    </header>
+
+    <!-- This is the Top Section (Above Water) -->
+    <section>
+        <img src="assets/bg.png" class="wallpaper">
+        <img src="assets/matahari.png" id="sun">
+        <img src="assets/gunung.png" id="mountains" class="wallpaper">
+        <img src="assets/cloud.png" id="cloud">
+        <h2 id="text"><span></span><br></h2>
+        <img src="assets/Findings (2).png" id="forest">
+        <img src="assets/exsport.png" id="rocks">
+        <img src="assets/bird1.png" id="bird1">
+        <a href="#sec" id="explore"></a>
+        
+        <img src="assets/bird2.png" id="bird2">
+        <img src="assets/ungu.png" id="water">
+    </section>
+
+    <!-- This is the Middle Section (Below Water) which has content -->
+    <div class="sec" id="sec">
+
+        <br>
+
+        <div class="glass">
+            <h3>Cerita Kami</h3>
+            <p>"Exsport adalah merek barang bawaan yang didirikan pada tahun 1979 untuk menciptakan kebutuhan perjalanan yang tak lekang oleh waktu dengan detail yang istimewa. Exsport hadir untuk mendukung segala jenis eksplorasi yang akan kamu lakukan di masa depan, apa pun temanya! Nantikan sentuhan khas warna dan bentuk dari mereka, serta lebih banyak kolaborasi dengan para penjelajah di luar sana!"
+            </p>
+        </div>
+
+        <br>
+
+        <div class="cards">
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image"><img src="assets/k2.png" alt="Card Image"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Tote Bag</h2>
+                        <p class="card_text">Temani langkah harianmu dengan tote bag simpel ini, memancarkan pesona klasik tak lekang  waktu.</p>
+                        <button onclick="window.location.href='ToteBag.html';" class="btn">Show More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat .cards_item as needed -->
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image"><img src="assets/k3.png" alt="Card Image"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Tas Ransel</h2>
+                        <p class="card_text">Ransel minimalis yang menyimpan petualangan dalam setiap ruangnya, siap menemani hari-harimu.</p>
+                        <button onclick="window.location.href='TasRansel.html';" class="btn">Show More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_item">
+                <div class="card">
+                    <div class="card_image"><img src="assets/k4.png" alt="Card Image"></div>
+                    <div class="card_content">
+                        <h2 class="card_title">Sling Bag</h2>
+                        <p class="card_text">Tas selempang/ sling bag elegan yang menyatu sempurna dengan gaya urban, praktis dan penuh karakter.</p>
+                        <button onclick="window.location.href='SlingBag.html';" class="btn">Show More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="glass">
+            <h3>Kualitas Produk Kami</h3>
+            <p>
+                <img src="assets/KAIN.jpg" alt="Gambar Kiri" style="float: left; width: 300px; height: auto; margin-right: 15px; border-radius: 8px;">
+                Tas Exsport memang dikenal dengan kualitas yang sangat diperhatikan, 
+                mulai dari bahan pilihan yang digunakan hingga proses pembuatan yang teliti. 
+                Penggunaan material seperti nylon, polyester, dan kulit PVC memastikan ketahanan tas terhadap berbagai kondisi. 
+                Jahitan yang kuat dan rapi, serta resleting, kancing, dan tali tas yang teruji kualitasnya, menunjukkan komitmen Exsport terhadap produk yang tahan lama dan fungsional.
+                Quality control yang ketat sebelum produk sampai ke konsumen juga menjamin 
+                bahwa tas yang diterima benar-benar dalam kondisi terbaik, memberikan kenyamanan 
+                dan keawetan meskipun digunakan secara rutin. Dengan semua aspek ini, tas Exsport menjadi 
+                pilihan yang sangat tepat untuk mereka yang mencari produk berkualitas.
+            </p>
+        </div>
+        
+
+        
+
+        
+        <div class="container">
+            <div class="carousel">
+        
+                <div class="carousel-inner">
+                    <img src="assets/1.jpeg" alt="Image 1">
+                    <img src="assets/2.jpeg" alt="Image 2">
+                    <img src="assets/3.jpeg" alt="Image 3">
+                    <img src="assets/4.jpeg" alt="Image 4">
+                </div>
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+                <script>
+                    let currentIndex = 0;
+                    const images = document.querySelectorAll('.carousel-inner img');
+                    const totalImages = images.length;
+                
+                    document.querySelector('.next').addEventListener('click', () => {
+                        currentIndex = (currentIndex + 1) % totalImages;
+                        updateCarousel();
+                    });
+                
+                    document.querySelector('.prev').addEventListener('click', () => {
+                        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+                        updateCarousel();
+                    });
+                
+                    function updateCarousel() {
+                        const offset = -currentIndex * 100;
+                        document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+                    }
+                </script>
+                
+            </div>
+            
+            <div class="carousel">
+        
+                <div class="carousel-inner">
+                    <img src="assets/anak1.jpeg" alt="Image 1">
+                    <img src="assets/anak2.jpeg" alt="Image 2">
+                    <img src="assets/anak3.jpeg" alt="Image 3">
+                    <img src="assets/anak4.jpeg" alt="Image 4">
+                    <img src="assets/anak5.jpeg" alt="Image 5">
+                </div>
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+                <script>
+                    let currentIndex2 = 0;
+    const images2 = document.querySelectorAll('.carousel:nth-of-type(2) .carousel-inner img');
+    const totalImages2 = images2.length;
+
+    document.querySelector('.carousel:nth-of-type(2) .next').addEventListener('click', () => {
+        currentIndex2 = (currentIndex2 + 1) % totalImages2;
+        updateCarousel2();
+    });
+
+    document.querySelector('.carousel:nth-of-type(2) .prev').addEventListener('click', () => {
+        currentIndex2 = (currentIndex2 - 1 + totalImages2) % totalImages2;
+        updateCarousel2();
+    });
+
+    function updateCarousel2() {
+        const offset = -currentIndex2 * 100;
+        document.querySelector('.carousel:nth-of-type(2) .carousel-inner').style.transform = `translateX(${offset}%)`;
+    }
+                </script>
+                
+            </div>
+        </div>
+        <div class="video-wrapper">
+            <iframe width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/_2L-2crayIo" 
+             frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+             allowfullscreen> </iframe>
+
+        </div> 
+        </div>
+            
+        
+ 
+<!-- Footer -->
+<footer id="footer">
+    <p>&copy; 2024 Exsport. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://twitter.com/yourbrand" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com/yourbrand" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com/yourbrand" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <a href="mailto:yourbrand@example.com">Contact Us</a>
+
+</div>  
+      <!-- Include Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<!-- Always include javascript at end of file...just above html tag -->
+<script src="action.js"></script>
+
+</html>

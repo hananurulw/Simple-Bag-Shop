@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #c0c7fb, #f6c0d8, #8fdbd8);
+  background-attachment: fixed;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99999;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+
+#header .logo {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #8fdbd8;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.back-button{
+  width:50px;
+  height:50px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  border-radius:50%;
+  border:#000 1px solid;
+  overflow:hidden;
+  transition:background 0.3s ease;
+  &.back{
+    .arrow-wrap{
+      left:-50%;
+    }
+  }
+  &:hover{
+    background:#000;
+    .arrow-wrap{
+      span{
+        background:#b3005e;
+      }
+    }
+  }
+  .arrow-wrap{
+    display:block;
+    position:absolute;
+    height:70%;
+    width:70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition:left 0.3s ease;
+    span{
+      height:1px;
+      left:0;
+      top:50%;
+      background:#000;
+      position:absolute;
+      display:block;
+      transition:background 0.3s ease;
+    }
+    .arrow-part-1{
+      width:100%;
+      transform: translate(0, -50%);
+    }
+    .arrow-part-2{
+      width:60%;
+      transform: rotate(-45deg);
+      transform-origin: 0 0;
+    }
+    .arrow-part-3{
+      width:60%;
+      transform: rotate(45deg);
+      transform-origin: 0 0;
+    }
+  }
+}
+
+#header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#header ul li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #000;
+  border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+  background: #f34c9d;
+  color: white;
+}
+
+h1 {
+  color: #134187;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 3em;
+  text-transform: none;
+  text-shadow: 
+      0 0 5px #f6c0d8,
+      0 0 10px #f6c0d8,
+      0 0 20px #f6c0d8,
+      0 0 30px #ff4d94,
+      0 0 40px #ff4d94,
+      0 0 50px #ff1c8b;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #ff99cc; /* Pink muda untuk latar tabel */
+  border-radius: 10px; /* Membuat sudut tabel melengkung */
+  overflow: hidden;
+  border: 3px solid #ff99cc; /*garis luar tabel
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Menambahkan bayangan */
+}
+
+thead {
+  background: linear-gradient(135deg, #ff99cc, #ffb3e6); /* Gradien pink */
+  color: #f34c9d; /* Warna teks di header */
+  text-align: center;
+  flex: justify;
+}
+tbody tr{
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+tbody tr:last-child {
+  border-bottom: none;
+}
+th, td {
+  padding: 14px 20px;
+  text-align: center;
+  border-bottom: 3px solid #ff99cc; /* Garis bawah dengan warna pink lembut */
+}
+
+tr:hover {
+  background-color: #ffd9e8; /* Warna latar hover */
+}
+
+tr:nth-child(even) {
+  background-color: #ffe6f2; /* Pink muda */
+}
+
+tr:nth-child(odd) {
+  background-color: #f5c6d9; /* Putih */
+}
+
+th {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+td {
+  font-size: 14px;
+  color: #333;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* Meratakan tombol ke tengah secara horizontal */
+  gap: 10px; /* Jarak antar tombol */
+}
+
+/* Tombol Edit */
+.btn-edit {
+  background-color: #c0c7fb; 
+  color: #000;
+  border: 5px solid #c0c7fb;
+}
+
+.btn-edit:hover {
+  background-color: #c0c7fb;
+  border-color: #c0c7fb;
+}
+
+/* Tombol Hapus */
+.btn-delete {
+  background-color: #000; 
+  color: #c0c7fb;
+  border: 1px solid #000;
+}
+
+.btn-delete:hover {
+  background-color: #000;
+  border-color: #000;
+}
+a {
+  color: #e60073; /* Warna link pink tua */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #b3005e; /* Warna saat hover */
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f34c9d;
+  color: #3365d3;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  z-index: 9999;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #fff;
+}   
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <link href="kategori.css" rel="stylesheet">
+    <header id="header">
+      <a href="#" class="logo"> </a>
+      <div class="back-button" onclick="history.back()">
+        <div class="arrow-wrap">
+            <span class="arrow-part-1"></span>
+            <span class="arrow-part-2"></span>
+            <span class="arrow-part-3"></span>
+        </div>
+    </div>
+      <ul>
+        <li><a href="home.html" >Home</a></li>
+        <li><a href="katalog.html" class="active">Products</a></li>
+        <li><a href="Pemesanan.php">Order</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+      <script>
+          // Ambil semua link di navbar
+          const menuLinks = document.querySelectorAll('#header ul li a');
+          
+          // Tambahkan event listener untuk setiap link
+          menuLinks.forEach(link => {
+              link.addEventListener('click', function(e) {
+                  // Hapus kelas active dari semua link
+                  menuLinks.forEach(link => link.classList.remove('active'));
+                  
+                  // Tambahkan kelas active pada link yang diklik
+                  e.target.classList.add('active');
+              });
+          });
+      </script>
+      
+  </header>
+    <div class="container">
+        <main class="grid">
+          <article>
+            <img src="assets/ADLBackpack/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>All Day Laptop Backpack</h3>
+              <h7>Rp 499.000</h7>
+              <p>Material: nylon<br>
+                Dimension: 45 x 30 x 16,5 cm <br>
+                Spesial Features: 1.	Satu kompartemen utama (dengan resleting) dan sekat 
+                empuk terpisah untuk laptop muat hingga ukuran 14 inch
+              </p>
+              <a href="ADLBackpack.html" 
+                 class="btn btn-primary btn-block">Details</a>
+          </article>
+          <article>
+            <img src="assets/EGMBackpack/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Easy Going Mini Backpack</h3>
+              <h7>Rp 299.000</h7>
+              <p>Material: nylon<br>
+                Spesial Features: Kompartemen utama (dengan resleting), 
+                Kompartemen pada bagian dalam (dengan resleting), dan
+                Kompartemen depan (dengan resleting) untuk easy acces 
+                
+              </p>
+              <a href="EGMBackpack.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/GOVBackpack/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Go on Vacation Backpack</h3>
+              <h7>Rp 679.000</h7>
+              <p>Material: nylon<br>
+                Dimension: 46 x 30 x 16 cm <br>
+                Spesial Features: Kompartemen utama dengan space yang luas (dengan resleting)
+                dan dua kantong samping untuk tempat botol minum
+                
+              </p>
+              <a href="GOVBackpack.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/JPBackpack/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Junior Plus Backpack</h3>
+              <h7>Rp 455.050</h7>
+              <p>Material: nylon<br>
+                Dimension: 40 x 28 x 12 cm <br>
+                Spesial Features: 3.	Dilengkapi label nama pada bagian 
+                luar belakang tas yang dapat ditulisi keterangan pemilik tas ransel
+              </p>
+              <a href="JPBackpack.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/MTWCBackpack/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Micro Two Way Carry</h3>
+              <h7>Rp 209.000</h7>
+              <p>Material: nylon<br>
+                Dimension: 19 x 17 x 7 cm <br>
+                Spesial Features: 3.	Dapat diselempang dan dijadikan ransel (two way carry)
+              </p>
+              <a href="MTWCBackpack.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+          <article>
+            <img src="assets/PMBackpack/1.png" alt="tshirt photo">
+            <div class="text">
+              <h3>Picnic Mini Rucksack</h3>
+              <h7>Rp 399.000</h7>
+              <p>Material: nylon<br>
+                Dimension: 26 x 22 x 12 cm <br>
+                Spesial Features: Kompartemen utama dengan tali serut 
+                dan dilengkapi penutup dengan buckle sebagai pengaman
+                
+              </p>
+              <a href="PMBackpack.html" 
+                 class="btn btn-primary btn-block">Details</a>
+            </div>
+          </article>
+        </main>
+      </div>
+      <div class="footer">
+      <footer id="footer">
+        <p>&copy; 2024 Exsport. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://twitter.com/yourbrand" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/yourbrand" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/yourbrand" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="mailto:yourbrand@example.com">Contact Us</a>
+    </footer>
+  </div>
+</body>
+</html>
